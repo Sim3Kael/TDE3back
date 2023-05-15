@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rodoviária</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      margin-top: 100px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color:#FF4B2B;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="checkbox"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top:20px ;
+      background-color: #FF4B2B;
+      color: #ffffff;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.5s;
+      margin-bottom: 10px;
+      border-radius: 18px;
+    }
+
+    button:hover {
+        background-color: #9c2d1a;
+        padding: 16px 24px;
+    }
+
+    #checkIda{
+        color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Rodoviária</h2>
+
+    <input type="text" id="destino" placeholder="Destino da viagem">
+    <input type="text" id="origem" placeholder="Origem da viagem">
+    <label for="dataIda">Data de ida</label>
+    <input type="date" id="dataIda">
+    
+    <label for="dataVolta">Data de volta</label>
+    <input type="date" id="dataVolta">
+  
+
+    <button href="confirm.html">CONTINUAR COMPRA</button>
+  </div>
+</body>
+</html>
