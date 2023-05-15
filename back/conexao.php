@@ -1,17 +1,13 @@
 <?php
 
-$hostname = "localhost";
-$bancoDeDados = "clientes";
+class Conexao {
+    private static $instance;
 
-$usuario = "root";
-$senha = "";
+    public static function getConn(){
 
-$mysqli = new mysqli($hostname, $usuario, $senha, $bancoDeDados);
-
-if($mysqli->connect_errno) {
-    echo "falha ao conectar: (" . $mysqli->connect_errno . ")" . $mysqli->connect_errno;
+        if (!isset(self::$instance)){
+            self::$instance = new \PDO('mysql:host=localhost;dbname=pdo', 'root', '');
+        }
+        return self::$instance;
+    }
 }
-
-else {
-    echo "Conectando ao Banco de Dados";
- }
