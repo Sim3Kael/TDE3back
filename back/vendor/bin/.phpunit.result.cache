@@ -1,0 +1,1 @@
+{"version":1,"defects":{"tests\\ViagemTeste::testValidar":7,"tests\\ClienteTeste::testValidar":5,"tests\\ClienteTeste::testValidarCliente":5},"times":{"tests\\ViagemTeste::testValidar":0.001,"tests\\ClienteTeste::testValidar":0.001,"tests\\ClienteTeste::testValidarCliente":0.006}}
